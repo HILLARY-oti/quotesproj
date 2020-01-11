@@ -331,7 +331,11 @@
   <!-- Highlight Card -->
   <div>
     <h1>Quotes</h1>
-    <p>Quotes for life {{ quote }}</p>
+    <ul>
+      <li *ngFor='let quote of quotes'>
+        {{quote}}
+      </li>
+    </ul>
   </div>
 </div>
 
