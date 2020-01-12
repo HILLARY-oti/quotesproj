@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'Raise your word,not your Voice.It is rain that grows flowers,not thunder.','"Jhon Stone"')
   ];
 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit() {
