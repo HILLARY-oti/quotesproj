@@ -1,4 +1,16 @@
 <p>
   The Author of this Quote is {{quote.description}}
 </p>
-<button (click)= 'quoteComplete(true)'>Delete</button>
+<!-- <p>This Quote was posted on {{quote.Date|dateCount}}</p> -->
+
+<button id="btn" class="btn btn-info" (click)='voteup()' type="submit">
+  <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
+<span class="badge">{{upvote}} Upvotes</span>
+</button>
+
+<button id="btn" class="btn btn-info" (click)='votedown()' type="submit">
+  <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
+<span class="badge">{{upvote}} Downvotes</span>
+</button>
+
+<button (click)= 'quoteComplete(true)' class="btn btn-outline-danger">Delete</button>
