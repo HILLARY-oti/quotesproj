@@ -2,15 +2,12 @@
   The Author of this Quote is {{quote.description}}
 </p>
 <!-- <p>This Quote was posted on {{quote.Date|dateCount}}</p> -->
-
-<button id="btn" class="btn btn-info" (click)='voteup()' type="submit">
+<button id="btn" class="btn btn-info" (click)='voteUp()' type="submit">
   <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
 <span class="badge">{{upvote}} Upvotes</span>
 </button>
+<button id="btn" class="btn btn-info" (click)='voteDown()' type="submit">
 
-<button id="btn" class="btn btn-info" (click)='votedown()' type="submit">
-  <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
-<span class="badge">{{upvote}} Downvotes</span>
+<span class="badge">{{downvote}} Downvotes</span>
 </button>
-
 <button (click)= 'quoteComplete(true)' class="btn btn-outline-danger">Delete</button>
