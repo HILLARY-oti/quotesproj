@@ -1,5 +1,5 @@
-# Akan name
-This is my portfolio, this is a website were it will show my introduction to programing.
+# Quotes
+App of adding and deleting quotes
 ## AUthor
 Hillary Otieno.
 ## Technologies used
